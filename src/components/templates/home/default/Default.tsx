@@ -1,5 +1,5 @@
 import "./Default.css";
-import Header from "../../../UI/organisms/Header";
+import Header from "../../../UI/organisms/header/Header";
 
 interface props {
   logo: string;
