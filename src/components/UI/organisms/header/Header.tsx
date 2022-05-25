@@ -12,7 +12,7 @@ interface props {
 
 function Header(props: props) {
   return (
-    <header className="App-header">
+    <header className="header">
       <Logo src={props.logo} />
       <Text primaryText={props.primaryText} />
       <Link

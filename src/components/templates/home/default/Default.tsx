@@ -10,7 +10,7 @@ interface props {
 
 function Default(props: props) {
   return (
-    <div className="Default">
+    <div className="default-home-template">
       <Header
         logo={props.logo}
         primaryText={props.primaryText}

@@ -8,7 +8,7 @@ interface props {
 function Link(props: props) {
   return (
     <a
-      className="App-link"
+      className="link"
       href={props.href}
       target="_blank"
       rel="noopener noreferrer"

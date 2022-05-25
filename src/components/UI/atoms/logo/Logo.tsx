@@ -5,7 +5,7 @@ interface props {
 }
 
 function Logo(props: props) {
-  return <img src={props.src} className="App-logo" alt="logo" />;
+  return <img src={props.src} className="logo" alt="logo" />;
 }
 
 export default Logo;
