@@ -3,6 +3,7 @@ import Text from "../../atoms/text/Text";
 import Logo from "../../atoms/logo/Logo";
 import Button from "../../atoms/button/Button";
 import "./Header.css";
+import { SHA3 } from 'sha3';
 
 interface props {
   logo: string;
@@ -12,8 +13,11 @@ interface props {
 }
 
 function login() {
+  const hash = new SHA3(512);
   const r = Math.random().toString(36).substring(7);
-  console.warn("r: ", r);
+  hash.update(r);
+  const digestedHash = hash.digest('hex')
+  console.warn("digestedHash: ", digestedHash);
 }
 
 function Header(props: props) {
