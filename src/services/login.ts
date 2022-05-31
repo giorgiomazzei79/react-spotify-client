@@ -1,15 +1,22 @@
-import { SHA3 } from "sha3";
-
 function login() {
-    const clientId = encodeURIComponent(process.env.REACT_APP_CLIENT_ID || "");
-    const responseType = "token";
-    const redirectUri = encodeURIComponent("http://localhost:3000");
-    const hash = new SHA3(512);
-    const r = Math.random().toString(36).substring(7);
-    hash.update(r);
-    const state = encodeURIComponent(hash.digest("hex"));
-    const authorizeUrl = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=${responseType}&redirect_uri=${redirectUri}&state=${state}`;
-    window.location.href = authorizeUrl;
+  fetch(
+    "https://api.themoviedb.org/4/list/1",
+    {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json;charset=utf-8",
+        Authorization: "Bearer " + process.env.REACT_APP_READ_ACCESS_TOKEN,
+      },
+    }
+  )
+    .then((response) => {
+      response
+        .json()
+        .then((data) => {
+          console.warn("data: ", data)
+        });
+    })
+    .catch((error) => console.log(error));
   }
 
   export default login;
