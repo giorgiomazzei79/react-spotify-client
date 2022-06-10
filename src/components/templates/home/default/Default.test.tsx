@@ -13,6 +13,6 @@ test("renders learn react link", () => {
       primaryText={primaryText}
     />
   );
-  const linkElement = screen.getByText(/ponz/i);
-  expect(linkElement).toBeInTheDocument();
+  const titleElement = screen.getByText(/mains/i);
+  expect(titleElement).toBeInTheDocument();
 });
