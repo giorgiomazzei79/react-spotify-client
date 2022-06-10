@@ -6,8 +6,7 @@ function Home() {
     <Default
       logo={logo}
       externalHref="https://reactjs.org"
-      primaryText="This is the Home page."
-      secondaryText="Learn React"
+      primaryText="TMDB client"
     />
   );
 }

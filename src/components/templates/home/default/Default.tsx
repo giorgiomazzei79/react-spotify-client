@@ -1,11 +1,12 @@
 import "./Default.css";
+import Button from "../../../UI/atoms/button/Button";
 import Header from "../../../UI/organisms/header/Header";
+import login from "../../../../services/login"
 
 interface props {
   logo: string;
   externalHref: string;
   primaryText: string;
-  secondaryText: string;
 }
 
 function Default(props: props) {
@@ -15,8 +16,8 @@ function Default(props: props) {
         logo={props.logo}
         primaryText={props.primaryText}
         externalHref={props.externalHref}
-        secondaryText={props.secondaryText}
       />
+      <Button text="login" onclick={login} />
     </div>
   );
 }
