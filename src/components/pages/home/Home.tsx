@@ -1,7 +1,7 @@
-import Default from "../../templates/home/default/Default";
+import { HomeDefault } from "../../templates";
 
 function Home() {
-  return <Default externalHref="https://reactjs.org" />;
+  return <HomeDefault externalHref="https://reactjs.org" />;
 }
 
 export default Home;

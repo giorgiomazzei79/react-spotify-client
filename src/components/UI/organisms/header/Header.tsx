@@ -1,5 +1,4 @@
-import Text from "../../atoms/text/Text";
-import Logo from "../../atoms/logo/Logo";
+import { Text, Logo } from "../../atoms";
 import "./Header.css";
 
 interface props {

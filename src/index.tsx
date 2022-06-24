@@ -2,9 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
-import Home from "./components/pages/home/Home";
-import Details from "./components/pages/details/Details";
-import Header from "./components/UI/organisms/header/Header";
+import { Home, Details } from "./components/pages";
+import { Header } from "./components/UI/organisms";
 import logo from "./assets/logo.svg";
 
 const root = ReactDOM.createRoot(
@@ -12,10 +11,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <Header
-      logo={logo}
-      primaryText="TMDB client"
-    />
+    <Header logo={logo} primaryText="TMDB client" />
     <BrowserRouter>
       <Routes>
         <Route index element={<Home />} />
