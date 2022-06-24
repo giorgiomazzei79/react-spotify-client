@@ -1,5 +1,5 @@
 import './Default.css';
-import { Button } from 'components/UI/atoms';
+import { Button, Spinner } from 'components/UI/atoms';
 import { Search } from 'components/UI/molecules';
 import { login } from 'services';
 
@@ -12,6 +12,7 @@ function Default(props: props) {
     <div className="default-home-template">
       <Search />
       <Button text="login" onclick={login} />
+      <Spinner />
     </div>
   );
 }
