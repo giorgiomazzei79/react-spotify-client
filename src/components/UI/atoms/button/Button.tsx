@@ -6,7 +6,7 @@ interface props {
 function Button(props: props) {
   return (
     <button type="button" onClick={props.onclick}>
-      {props.text}{" "}
+      {props.text}
     </button>
   );
 }
