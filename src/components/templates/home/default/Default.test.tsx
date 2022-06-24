@@ -1,14 +1,10 @@
-import { render, screen } from "@testing-library/react";
-import Default from "./Default";
+import { render, screen } from '@testing-library/react';
+import Default from './Default';
 
-const externalHref = "lurz";
+const externalHref = 'lurz';
 
-test("renders learn react link", () => {
-  render(
-    <Default
-      externalHref={externalHref}
-    />
-  );
+test('renders learn react link', () => {
+  render(<Default externalHref={externalHref} />);
   const titleElement = screen.getByText(/search/i);
   expect(titleElement).toBeInTheDocument();
 });

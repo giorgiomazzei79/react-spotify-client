@@ -1,5 +1,5 @@
-import { Text, Logo } from "components/UI/atoms";
-import "./Header.css";
+import { Text, Logo } from 'components/UI/atoms';
+import './Header.css';
 
 interface props {
   logo: string;

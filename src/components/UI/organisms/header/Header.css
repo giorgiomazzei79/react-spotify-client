@@ -1,19 +1,19 @@
 .header {
-    display: flex;
-    background-color: #b13316;
-    align-items: center;
-    color: white;
-    height: 8vh;
-  }
-  
-  .header__container--logo {
-    flex: 1;
-    background-color: #16b125;
-    display:flex;
-    padding-left: 1vw;
-  }
-  
-  .header__container--title {
-    flex: 1;
-    background-color: #1b16b1;
-  }
+  display: flex;
+  background-color: #b13316;
+  align-items: center;
+  color: white;
+  height: 8vh;
+}
+
+.header__container--logo {
+  flex: 1;
+  background-color: #16b125;
+  display: flex;
+  padding-left: 1vw;
+}
+
+.header__container--title {
+  flex: 1;
+  background-color: #1b16b1;
+}

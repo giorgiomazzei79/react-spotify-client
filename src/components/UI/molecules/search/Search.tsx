@@ -1,9 +1,11 @@
-import './Search.css'
+import './Search.css';
 
 function Search() {
   return (
     <div className="search">
-      <label className="search__label" htmlFor="username">search</label>
+      <label className="search__label" htmlFor="username">
+        search
+      </label>
       <input id="username" />
     </div>
   );
