@@ -1,7 +1,7 @@
 import './Default.css';
 import { Button, Spinner } from 'components/UI/atoms';
 import { Search } from 'components/UI/molecules';
-import { login } from 'services';
+import { getPopular } from 'services';
 
 interface props {
   externalHref: string;
@@ -11,7 +11,7 @@ function Default(props: props) {
   return (
     <div className="default-home-template">
       <Search />
-      <Button text="login" onclick={login} />
+      <Button text="Get Popular Films" onclick={getPopular} />
       <Spinner />
     </div>
   );

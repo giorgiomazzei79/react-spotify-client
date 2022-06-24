@@ -1,1 +1,1 @@
-export { default as login } from './login';
+export { default as getPopular } from './getPopular';
