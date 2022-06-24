@@ -1,5 +1,5 @@
-function getPopular() {
-  fetch(
+async function getPopular() {
+  return fetch(
     `https://api.themoviedb.org/3/movie/popular?api_key=${process.env.REACT_APP_CLIENT_ID}`,
     {
       method: 'GET',
@@ -7,13 +7,7 @@ function getPopular() {
         'Content-Type': 'application/json;charset=utf-8',
       },
     },
-  )
-    .then((response) => {
-      response.json().then((data) => {
-        console.warn('data: ', data);
-      });
-    })
-    .catch((error) => console.log(error));
+  ).then((response) => response.json());
 }
 
 export default getPopular;
