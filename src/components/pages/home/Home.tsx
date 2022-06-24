@@ -1,4 +1,4 @@
-import { HomeDefault } from "../../templates";
+import { HomeDefault } from "components/templates";
 
 function Home() {
   return <HomeDefault externalHref="https://reactjs.org" />;

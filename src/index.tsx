@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Home, Details } from "components/pages";
+import { Header } from "components/UI/organisms";
+import logo from "assets/logo.svg";
 import "./index.css";
-import { Home, Details } from "./components/pages";
-import { Header } from "./components/UI/organisms";
-import logo from "./assets/logo.svg";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement

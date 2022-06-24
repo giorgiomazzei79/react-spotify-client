@@ -1,7 +1,7 @@
 import "./Default.css";
-import { Button } from "../../../UI/atoms";
-import { Search } from "../../../UI/molecules";
-import { login } from "../../../../services";
+import { Button } from "components/UI/atoms";
+import { Search } from "components/UI/molecules";
+import { login } from "services";
 
 interface props {
   externalHref: string;
