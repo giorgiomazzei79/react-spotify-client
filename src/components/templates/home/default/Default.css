@@ -1,3 +1,55 @@
 .default-home-template {
   text-align: center;
 }
+
+.card {
+  background-color: rebeccapurple;
+  width: 220px;
+  height: 410px;
+  padding: 10px;
+}
+
+.card__link {
+  text-decoration: none;
+}
+
+.card__link__inner-wrapper {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__link__inner-wrapper__title {
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  text-align: left;
+  line-height: 40px;
+  font-size: 16px;
+  padding: 0 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card__link__inner-wrapper__description {
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  line-height: 20px;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  word-spacing: -1px;
+  font-size: 12px;
+  padding: 0 4px;
+  overflow-y: hidden;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background-clip: text;
+  color: transparent;
+}

@@ -1,4 +1,3 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Home, Details } from 'components/pages';
@@ -10,7 +9,7 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
 );
 root.render(
-  <React.StrictMode>
+  <>
     <Header logo={logo} primaryText="TMDB client" />
     <BrowserRouter>
       <Routes>
@@ -19,5 +18,5 @@ root.render(
         <Route path="details" element={<Details />} />
       </Routes>
     </BrowserRouter>
-  </React.StrictMode>,
+  </>,
 );
